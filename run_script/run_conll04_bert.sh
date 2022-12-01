@@ -2,7 +2,7 @@ export TASK_NAME=ner
 export DATASET_NAME=conll2004
 export CUDA_VISIBLE_DEVICES=0
 
-bs=128
+bs=64
 lr=2e-2
 dropout=0.2
 psl=128
