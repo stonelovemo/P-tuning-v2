@@ -72,7 +72,7 @@ class ExponentialTrainer(BaseTrainer):
 
         # memory metrics - must set up as early as possible
         self._memory_tracker.start()
-
+        self.use_amp = False
         args = self.args
 
         self.is_in_train = True

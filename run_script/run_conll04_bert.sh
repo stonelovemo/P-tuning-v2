@@ -2,14 +2,14 @@ export TASK_NAME=ner
 export DATASET_NAME=conll2004
 export CUDA_VISIBLE_DEVICES=0
 
-bs=32
+bs=128
 lr=2e-2
 dropout=0.2
 psl=128
 epoch=40
 
 python3 run.py \
-  --model_name_or_path bert-large-uncased \
+  --model_name_or_path bert-base-uncased \
   --task_name $TASK_NAME \
   --dataset_name $DATASET_NAME \
   --do_train \
